@@ -5,6 +5,7 @@ db = 'postgresql://dima:dima@localhost:5432/songs'
 engine = sqlalchemy.create_engine(db)
 connection = engine.connect()
 
+
 connection.execute("""CREATE table author
 (author_id serial PRIMARY KEY,
 name text NOT NULL);

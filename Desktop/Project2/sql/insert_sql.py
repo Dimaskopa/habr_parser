@@ -5,6 +5,7 @@ db = 'postgresql://dima:dima@localhost:5432/songs'
 engine = sqlalchemy.create_engine(db)
 connection = engine.connect()
 
+
 connection.execute("""INSERT INTO author
 VALUES
 (1, 'Sting'),
@@ -73,7 +74,7 @@ VALUES
 (5, 'From Russia with Love', 2012),
 (6, 'Pop mix max', 2020),
 (7, 'All good', 2015),
-(8, 'Sting and Co.', 2021); 
+(8, 'Sting and Co.', 2021);
 """)
 connection.execute("""INSERT INTO collection_mix
 VALUES
