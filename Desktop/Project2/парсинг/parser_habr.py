@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import re
 
 KEYWORDS = ['IPv6', 'API', 'web', 'python']
 
